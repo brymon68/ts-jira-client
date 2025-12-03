@@ -17,10 +17,10 @@ importers:
         version: 1.5.3
       '@semantic-release/changelog':
         specifier: ^6.0.3
-        version: 6.0.3(semantic-release@23.0.0)
+        version: 6.0.3(semantic-release@23.0.0(typescript@5.3.3))
       '@semantic-release/git':
         specifier: ^10.0.1
-        version: 10.0.1(semantic-release@23.0.0)
+        version: 10.0.1(semantic-release@23.0.0(typescript@5.3.3))
       '@types/node':
         specifier: ^20.11.16
         version: 20.11.16
@@ -3053,7 +3053,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.9.6':
     optional: true
 
-  '@semantic-release/changelog@6.0.3(semantic-release@23.0.0)':
+  '@semantic-release/changelog@6.0.3(semantic-release@23.0.0(typescript@5.3.3))':
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
@@ -3061,7 +3061,7 @@ snapshots:
       lodash: 4.17.21
       semantic-release: 23.0.0(typescript@5.3.3)
 
-  '@semantic-release/commit-analyzer@11.1.0(semantic-release@23.0.0)':
+  '@semantic-release/commit-analyzer@11.1.0(semantic-release@23.0.0(typescript@5.3.3))':
     dependencies:
       conventional-changelog-angular: 7.0.0
       conventional-commits-filter: 4.0.0
@@ -3078,7 +3078,7 @@ snapshots:
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/git@10.0.1(semantic-release@23.0.0)':
+  '@semantic-release/git@10.0.1(semantic-release@23.0.0(typescript@5.3.3))':
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
@@ -3092,7 +3092,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/github@9.2.6(semantic-release@23.0.0)':
+  '@semantic-release/github@9.2.6(semantic-release@23.0.0(typescript@5.3.3))':
     dependencies:
       '@octokit/core': 5.1.0
       '@octokit/plugin-paginate-rest': 9.1.5(@octokit/core@5.1.0)
@@ -3114,7 +3114,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/npm@11.0.2(semantic-release@23.0.0)':
+  '@semantic-release/npm@11.0.2(semantic-release@23.0.0(typescript@5.3.3))':
     dependencies:
       '@semantic-release/error': 4.0.0
       aggregate-error: 5.0.0
@@ -3131,7 +3131,7 @@ snapshots:
       semver: 7.5.4
       tempy: 3.1.0
 
-  '@semantic-release/release-notes-generator@12.1.0(semantic-release@23.0.0)':
+  '@semantic-release/release-notes-generator@12.1.0(semantic-release@23.0.0(typescript@5.3.3))':
     dependencies:
       conventional-changelog-angular: 7.0.0
       conventional-changelog-writer: 7.0.1
@@ -3548,6 +3548,7 @@ snapshots:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
+    optionalDependencies:
       typescript: 5.3.3
 
   cross-spawn@5.1.0:
@@ -4949,11 +4950,11 @@ snapshots:
 
   semantic-release@23.0.0(typescript@5.3.3):
     dependencies:
-      '@semantic-release/commit-analyzer': 11.1.0(semantic-release@23.0.0)
+      '@semantic-release/commit-analyzer': 11.1.0(semantic-release@23.0.0(typescript@5.3.3))
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 9.2.6(semantic-release@23.0.0)
-      '@semantic-release/npm': 11.0.2(semantic-release@23.0.0)
-      '@semantic-release/release-notes-generator': 12.1.0(semantic-release@23.0.0)
+      '@semantic-release/github': 9.2.6(semantic-release@23.0.0(typescript@5.3.3))
+      '@semantic-release/npm': 11.0.2(semantic-release@23.0.0(typescript@5.3.3))
+      '@semantic-release/release-notes-generator': 12.1.0(semantic-release@23.0.0(typescript@5.3.3))
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.0(typescript@5.3.3)
       debug: 4.3.4
@@ -5462,16 +5463,15 @@ snapshots:
 
   vite@5.0.12(@types/node@20.11.16):
     dependencies:
-      '@types/node': 20.11.16
       esbuild: 0.19.12
       postcss: 8.4.33
       rollup: 4.9.6
     optionalDependencies:
+      '@types/node': 20.11.16
       fsevents: 2.3.3
 
   vitest@1.2.2(@types/node@20.11.16):
     dependencies:
-      '@types/node': 20.11.16
       '@vitest/expect': 1.2.2
       '@vitest/runner': 1.2.2
       '@vitest/snapshot': 1.2.2
@@ -5493,6 +5493,8 @@ snapshots:
       vite: 5.0.12(@types/node@20.11.16)
       vite-node: 1.2.2(@types/node@20.11.16)
       why-is-node-running: 2.2.2
+    optionalDependencies:
+      '@types/node': 20.11.16
     transitivePeerDependencies:
       - less
       - lightningcss
